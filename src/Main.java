@@ -6,4 +6,6 @@ void main() {
     System.out.println("  Antes  : " + lista);
     metodosStrings.filtroSelectivo(lista, 'a', 5);
     System.out.println("  Después: " + lista);
+
+    System.out.println(metodosStrings.convertidorAMayusculas(lista));
 }
