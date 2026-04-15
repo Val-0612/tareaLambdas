@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.stream.Collectors;
 
 
 public class metodosStrings {
@@ -16,6 +18,15 @@ public class metodosStrings {
         lista.stream()
                 .map(s->s.toUpperCase()).forEach(s -> mayusculas.add(s));
         return mayusculas;
+
+    }
+
+    //Método 5
+    public static HashMap<String,Integer> mapaLongitudes(ArrayList<String> lista){
+        HashMap<String,Integer> longitudes= (HashMap<String, Integer>) lista.stream()
+                .collect(Collectors.toMap(s -> s, s->s.length()));
+        return longitudes;
+
 
     }
 }

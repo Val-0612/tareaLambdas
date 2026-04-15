@@ -14,6 +14,7 @@ void main() {
     }
 
     System.out.println(metodosInt.cuadradosUnicos(numeros));
+    System.out.println(metodosStrings.mapaLongitudes(lista));
 
 
 }
