@@ -29,4 +29,12 @@ public class metodosStrings {
 
 
     }
+
+    //Método 6
+    public static void catalogo(HashMap<String,Double> inventario){
+        inventario.entrySet().stream().forEach(e -> {
+            System.out.println(e.getKey());
+            System.out.println(e.getValue()*.9);
+        });
+    }
 }
