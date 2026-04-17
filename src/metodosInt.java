@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
@@ -14,6 +15,11 @@ public class metodosInt {
         HashSet<Integer> cuadradosUnicos= (HashSet<Integer>) lista.stream().map(n->n*n).collect(Collectors.toSet());
         return cuadradosUnicos;
 
+    }
+
+    //Método 10
+    public static void topeFrecuencias(HashMap<String,Integer> frecuencias, int maxFreq){
+        frecuencias.replaceAll((palabra, frecuencia)->frecuencia<=maxFreq?frecuencia:maxFreq);
     }
 
 

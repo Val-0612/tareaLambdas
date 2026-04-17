@@ -25,12 +25,17 @@ void main() {
     palabrasConRepeticiones.add("ajo");
     palabrasConRepeticiones.add("Hermano");
     palabrasConRepeticiones.add("Diego");
+    palabrasConRepeticiones.add("Diego");
     palabrasConRepeticiones.add("ajo");
     palabrasConRepeticiones.add("Diego");
+    palabrasConRepeticiones.add("Diego");
+    palabrasConRepeticiones.add("ajo");
     HashMap<String, Integer> hashPalabrasRepetidas=metodosStrings.contadorDeFrecuencias(palabrasConRepeticiones);
     System.out.println(hashPalabrasRepetidas);
-    System.out.println(metodosStrings.filtradorDeFrecuencias(hashPalabrasRepetidas,2));
+    System.out.println(metodosStrings.filtradorDeFrecuencias(hashPalabrasRepetidas,1));
     System.out.println(metodosStrings.deDuplicador("Hola como estamos flipo flipo chaval", 5));
+    metodosInt.topeFrecuencias(hashPalabrasRepetidas,3);
+    System.out.println(hashPalabrasRepetidas);
 
 
 }
