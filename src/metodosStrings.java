@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.stream.Collectors;
 
 
@@ -51,5 +53,13 @@ public class metodosStrings {
                 .filter(frecuencia->frecuencia.getValue()>=umbral)
                 .map(frecuencia->frecuencia.getKey())
                 .collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    //Método 9
+    public static HashSet<String> deDuplicador(String frase, int umbral){
+        return Arrays.stream(frase.split("\\W"))
+                .filter(palabra->palabra.length()>=umbral)
+                .map(palabra->palabra.toLowerCase())
+                .collect(Collectors.toCollection(HashSet::new));
     }
 }

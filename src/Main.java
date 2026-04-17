@@ -30,6 +30,7 @@ void main() {
     HashMap<String, Integer> hashPalabrasRepetidas=metodosStrings.contadorDeFrecuencias(palabrasConRepeticiones);
     System.out.println(hashPalabrasRepetidas);
     System.out.println(metodosStrings.filtradorDeFrecuencias(hashPalabrasRepetidas,2));
+    System.out.println(metodosStrings.deDuplicador("Hola como estamos flipo flipo chaval", 5));
 
 
 }
