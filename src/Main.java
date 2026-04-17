@@ -21,4 +21,12 @@ void main() {
     inventario.put("Weilong V11 8mg", 41.99);
     metodosStrings.catalogo(inventario);
 
+    ArrayList<String> palabrasConRepeticiones= new ArrayList<>();
+    palabrasConRepeticiones.add("ajo");
+    palabrasConRepeticiones.add("Hermano");
+    palabrasConRepeticiones.add("Diego");
+    palabrasConRepeticiones.add("ajo");
+    palabrasConRepeticiones.add("Diego");
+    System.out.println(metodosStrings.contadorDeFrecuencias(palabrasConRepeticiones));
+
 }

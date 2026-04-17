@@ -37,4 +37,11 @@ public class metodosStrings {
             System.out.println(e.getValue()*.9);
         });
     }
+
+    //Método 7
+    public static HashMap<String,Integer> contadorDeFrecuencias(ArrayList<String> lista){
+        HashMap<String,Integer> frecuencias= new HashMap<>();
+        lista.forEach(palabra->frecuencias.merge(palabra,1,(valorViejo,uno)->valorViejo+uno));
+        return frecuencias;
+    }
 }
