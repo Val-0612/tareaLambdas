@@ -44,4 +44,12 @@ public class metodosStrings {
         lista.forEach(palabra->frecuencias.merge(palabra,1,(valorViejo,uno)->valorViejo+uno));
         return frecuencias;
     }
+
+    //Método 8
+    public static ArrayList<String> filtradorDeFrecuencias(HashMap<String,Integer> frecuencias, int umbral){
+        return frecuencias.entrySet().stream()
+                .filter(frecuencia->frecuencia.getValue()>=umbral)
+                .map(frecuencia->frecuencia.getKey())
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 }

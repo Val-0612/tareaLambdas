@@ -27,6 +27,9 @@ void main() {
     palabrasConRepeticiones.add("Diego");
     palabrasConRepeticiones.add("ajo");
     palabrasConRepeticiones.add("Diego");
-    System.out.println(metodosStrings.contadorDeFrecuencias(palabrasConRepeticiones));
+    HashMap<String, Integer> hashPalabrasRepetidas=metodosStrings.contadorDeFrecuencias(palabrasConRepeticiones);
+    System.out.println(hashPalabrasRepetidas);
+    System.out.println(metodosStrings.filtradorDeFrecuencias(hashPalabrasRepetidas,2));
+
 
 }
